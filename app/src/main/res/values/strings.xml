@@ -1,4 +1,11 @@
 <resources>
-    <string name="app_name">Hello World</string>
-    <string name="hello_android">Hello Android!</string>
+    <string name="app_name">Example1</string>
+    <string name="hello_android">И снова здравствуйте!</string>
+    <string name="button_yes">Да</string>
+    <string name="button_no">Нет</string>
+    <string name="count_click">0</string>
+    <string name="correct_answer">Правильно</string>
+    <string name="incorrect_answer">Неправильно</string>
+    <string name="input_name">Введите имя</string>
+
 </resources>

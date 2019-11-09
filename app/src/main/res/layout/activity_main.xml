@@ -1,35 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-
+    android:gravity="center"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:background="#DFA2EB"
         android:gravity="center"
         android:text="@string/hello_android"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="#AAF80631"
-        android:textSize="50sp"
-        android:textStyle="bold" />
+        android:layout_marginBottom="20dp"/>
 
-    <ImageView
-        android:id="@+id/imageView"
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/ic_launcher" />
+        android:hint="@string/input_name"
+        android:id="@+id/editText" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
+    <TextView
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/count_click"
+        android:textSize="30sp"
+        android:background="@color/colorCountBack"
+        android:layout_margin="10dp"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+            <Button
+                android:onClick="toastMe1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_yes"
+                android:text="@string/button_yes"
+                android:layout_marginEnd="20dp"
+                android:background="@color/colorPrimary"
+                android:textSize="25sp"/>
+
+            <Button
+                android:onClick="toastMe2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_no"
+                android:text="@string/button_no"
+                android:layout_marginStart="20dp"
+                android:background="@color/colorAccent"
+                android:textSize="25sp"/>
+     </LinearLayout>
+
+
 
 </LinearLayout>
